@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		56629B122920672700211A15 /* NebulaXPCProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56629B112920672700211A15 /* NebulaXPCProtocol.swift */; };
+		56629B142920672700211A15 /* NebulaXPC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56629B132920672700211A15 /* NebulaXPC.swift */; };
+		56629B162920672700211A15 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56629B152920672700211A15 /* main.swift */; };
+		56629B1A2920672700211A15 /* NebulaXPC.xpc in Embed XPC Services */ = {isa = PBXBuildFile; fileRef = 56629B0F2920672700211A15 /* NebulaXPC.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		568E8C8A28E0CB1E002F35A0 /* NebulaBarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568E8C8928E0CB1E002F35A0 /* NebulaBarApp.swift */; };
 		568E8C8C28E0CB1E002F35A0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568E8C8B28E0CB1E002F35A0 /* ContentView.swift */; };
 		568E8C8E28E0CB1F002F35A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 568E8C8D28E0CB1F002F35A0 /* Assets.xcassets */; };
@@ -14,9 +18,18 @@
 		568E8C9C28E0CB1F002F35A0 /* NebulaBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568E8C9B28E0CB1F002F35A0 /* NebulaBarTests.swift */; };
 		568E8CA628E0CB1F002F35A0 /* NebulaBarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568E8CA528E0CB1F002F35A0 /* NebulaBarUITests.swift */; };
 		568E8CA828E0CB1F002F35A0 /* NebulaBarUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568E8CA728E0CB1F002F35A0 /* NebulaBarUITestsLaunchTests.swift */; };
+		568E8CB928E0D06E002F35A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568E8CB828E0D06E002F35A0 /* AppDelegate.swift */; };
+		56FBE98928F0A4AF00B21B81 /* NebulaMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FBE98828F0A4AF00B21B81 /* NebulaMonitor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		56629B182920672700211A15 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 568E8C7E28E0CB1E002F35A0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 56629B0E2920672700211A15;
+			remoteInfo = NebulaXPC;
+		};
 		568E8C9828E0CB1F002F35A0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 568E8C7E28E0CB1E002F35A0 /* Project object */;
@@ -33,7 +46,35 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		56629B1E2920672700211A15 /* Embed XPC Services */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/XPCServices";
+			dstSubfolderSpec = 16;
+			files = (
+				56629B1A2920672700211A15 /* NebulaXPC.xpc in Embed XPC Services */,
+			);
+			name = "Embed XPC Services";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56629B1F2920698100211A15 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/XPCServices";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		56629B0F2920672700211A15 /* NebulaXPC.xpc */ = {isa = PBXFileReference; explicitFileType = "wrapper.xpc-service"; includeInIndex = 0; path = NebulaXPC.xpc; sourceTree = BUILT_PRODUCTS_DIR; };
+		56629B112920672700211A15 /* NebulaXPCProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NebulaXPCProtocol.swift; sourceTree = "<group>"; };
+		56629B132920672700211A15 /* NebulaXPC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NebulaXPC.swift; sourceTree = "<group>"; };
+		56629B152920672700211A15 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		56629B172920672700211A15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		568E8C8628E0CB1E002F35A0 /* NebulaBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NebulaBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		568E8C8928E0CB1E002F35A0 /* NebulaBarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NebulaBarApp.swift; sourceTree = "<group>"; };
 		568E8C8B28E0CB1E002F35A0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -45,9 +86,19 @@
 		568E8CA128E0CB1F002F35A0 /* NebulaBarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NebulaBarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		568E8CA528E0CB1F002F35A0 /* NebulaBarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NebulaBarUITests.swift; sourceTree = "<group>"; };
 		568E8CA728E0CB1F002F35A0 /* NebulaBarUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NebulaBarUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		568E8CB828E0D06E002F35A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		568E8CBA28E0DB94002F35A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		56FBE98828F0A4AF00B21B81 /* NebulaMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NebulaMonitor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		56629B0C2920672700211A15 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		568E8C8328E0CB1E002F35A0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -72,12 +123,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		56629B102920672700211A15 /* NebulaXPC */ = {
+			isa = PBXGroup;
+			children = (
+				56629B112920672700211A15 /* NebulaXPCProtocol.swift */,
+				56629B132920672700211A15 /* NebulaXPC.swift */,
+				56629B152920672700211A15 /* main.swift */,
+				56629B172920672700211A15 /* Info.plist */,
+			);
+			path = NebulaXPC;
+			sourceTree = "<group>";
+		};
 		568E8C7D28E0CB1E002F35A0 = {
 			isa = PBXGroup;
 			children = (
 				568E8C8828E0CB1E002F35A0 /* NebulaBar */,
 				568E8C9A28E0CB1F002F35A0 /* NebulaBarTests */,
 				568E8CA428E0CB1F002F35A0 /* NebulaBarUITests */,
+				56629B102920672700211A15 /* NebulaXPC */,
 				568E8C8728E0CB1E002F35A0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,6 +151,7 @@
 				568E8C8628E0CB1E002F35A0 /* NebulaBar.app */,
 				568E8C9728E0CB1F002F35A0 /* NebulaBarTests.xctest */,
 				568E8CA128E0CB1F002F35A0 /* NebulaBarUITests.xctest */,
+				56629B0F2920672700211A15 /* NebulaXPC.xpc */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,11 +159,14 @@
 		568E8C8828E0CB1E002F35A0 /* NebulaBar */ = {
 			isa = PBXGroup;
 			children = (
+				568E8CBA28E0DB94002F35A0 /* Info.plist */,
 				568E8C8928E0CB1E002F35A0 /* NebulaBarApp.swift */,
 				568E8C8B28E0CB1E002F35A0 /* ContentView.swift */,
 				568E8C8D28E0CB1F002F35A0 /* Assets.xcassets */,
 				568E8C9228E0CB1F002F35A0 /* NebulaBar.entitlements */,
 				568E8C8F28E0CB1F002F35A0 /* Preview Content */,
+				568E8CB828E0D06E002F35A0 /* AppDelegate.swift */,
+				56FBE98828F0A4AF00B21B81 /* NebulaMonitor.swift */,
 			);
 			path = NebulaBar;
 			sourceTree = "<group>";
@@ -132,6 +199,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		56629B0E2920672700211A15 /* NebulaXPC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56629B1B2920672700211A15 /* Build configuration list for PBXNativeTarget "NebulaXPC" */;
+			buildPhases = (
+				56629B0B2920672700211A15 /* Sources */,
+				56629B0C2920672700211A15 /* Frameworks */,
+				56629B0D2920672700211A15 /* Resources */,
+				56629B1F2920698100211A15 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NebulaXPC;
+			productName = NebulaXPC;
+			productReference = 56629B0F2920672700211A15 /* NebulaXPC.xpc */;
+			productType = "com.apple.product-type.xpc-service";
+		};
 		568E8C8528E0CB1E002F35A0 /* NebulaBar */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 568E8CAB28E0CB1F002F35A0 /* Build configuration list for PBXNativeTarget "NebulaBar" */;
@@ -139,10 +224,12 @@
 				568E8C8228E0CB1E002F35A0 /* Sources */,
 				568E8C8328E0CB1E002F35A0 /* Frameworks */,
 				568E8C8428E0CB1E002F35A0 /* Resources */,
+				56629B1E2920672700211A15 /* Embed XPC Services */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				56629B192920672700211A15 /* PBXTargetDependency */,
 			);
 			name = NebulaBar;
 			productName = NebulaBar;
@@ -192,9 +279,12 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1400;
+				LastSwiftUpdateCheck = 1410;
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
+					56629B0E2920672700211A15 = {
+						CreatedOnToolsVersion = 14.1;
+					};
 					568E8C8528E0CB1E002F35A0 = {
 						CreatedOnToolsVersion = 14.0;
 					};
@@ -224,11 +314,19 @@
 				568E8C8528E0CB1E002F35A0 /* NebulaBar */,
 				568E8C9628E0CB1F002F35A0 /* NebulaBarTests */,
 				568E8CA028E0CB1F002F35A0 /* NebulaBarUITests */,
+				56629B0E2920672700211A15 /* NebulaXPC */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		56629B0D2920672700211A15 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		568E8C8428E0CB1E002F35A0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -255,12 +353,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		56629B0B2920672700211A15 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56629B142920672700211A15 /* NebulaXPC.swift in Sources */,
+				56629B122920672700211A15 /* NebulaXPCProtocol.swift in Sources */,
+				56629B162920672700211A15 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		568E8C8228E0CB1E002F35A0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				568E8CB928E0D06E002F35A0 /* AppDelegate.swift in Sources */,
 				568E8C8C28E0CB1E002F35A0 /* ContentView.swift in Sources */,
 				568E8C8A28E0CB1E002F35A0 /* NebulaBarApp.swift in Sources */,
+				56FBE98928F0A4AF00B21B81 /* NebulaMonitor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +394,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		56629B192920672700211A15 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 56629B0E2920672700211A15 /* NebulaXPC */;
+			targetProxy = 56629B182920672700211A15 /* PBXContainerItemProxy */;
+		};
 		568E8C9928E0CB1F002F35A0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 568E8C8528E0CB1E002F35A0 /* NebulaBar */;
@@ -297,6 +412,46 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		56629B1C2920672700211A15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NebulaXPC/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = NebulaXPC;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nothingbird.NebulaXPC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		56629B1D2920672700211A15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NebulaXPC/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = NebulaXPC;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nothingbird.NebulaXPC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		568E8CA928E0CB1F002F35A0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -413,6 +568,7 @@
 		568E8CAC28E0CB1F002F35A0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = NebulaBar/NebulaBar.entitlements;
@@ -421,7 +577,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"NebulaBar/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = /Users/sammeester/Documents/Projects/NebulaBar/NebulaBar/Info.plist;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -438,6 +596,7 @@
 		568E8CAD28E0CB1F002F35A0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = NebulaBar/NebulaBar.entitlements;
@@ -446,7 +605,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"NebulaBar/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = /Users/sammeester/Documents/Projects/NebulaBar/NebulaBar/Info.plist;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -531,6 +692,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		56629B1B2920672700211A15 /* Build configuration list for PBXNativeTarget "NebulaXPC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56629B1C2920672700211A15 /* Debug */,
+				56629B1D2920672700211A15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		568E8C8128E0CB1E002F35A0 /* Build configuration list for PBXProject "NebulaBar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

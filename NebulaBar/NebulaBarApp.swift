@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct NebulaBarApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
-    }
+    
+    @NSApplicationDelegateAdaptor(AppDelegate.self) var delegate;
+    
+//    var body: some Scene {
+//        WindowGroup {
+//            ContentView()
+//        }
+//    }
 }
